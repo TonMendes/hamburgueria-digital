@@ -1,0 +1,144 @@
+.shop_page_banner {
+  background: url("../../assets/parallax/bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.shop_page_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.shop_page_banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.shop_page_banner h1 {
+  color: var(--white);
+  font-size: 4rem;
+}
+
+.shop_page_banner p {
+  color: var(--light-white);
+  font-size: 1.2rem;
+}
+
+.shop_page_app {
+  padding: 100px 0 0;
+  background: var(--yellow);
+}
+
+.shop_page_app h4 {
+  font-size: 2.375rem;
+  font-weight: 400;
+  color: var(--bg-coffee);
+}
+
+.shop_page_app h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--bg-coffee);
+}
+
+.shop_page_app p {
+  font-size: 1.125rem;
+  padding-right: 10%;
+  color: var(--bg-coffee);
+  margin-bottom: 40px;
+}
+
+.shop_page_app .store {
+  max-width: 40%;
+}
+
+.shop_page_how {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: var(--light-grey);
+}
+
+.shop_page_how h2 {
+  font-size: 3rem;
+}
+
+.shop_page_how p {
+  color: var(--grey);
+  font-size: 1.1rem;
+}
+
+.how_box i {
+  font-size: 3rem;
+  color: var(--light-red);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.how_box h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.how_box p {
+  color: var(--grey);
+}
+
+.shop_page_brands {
+  padding: 70px 0 40px;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.shop_page_brands .brand_img {
+  width: 180px;
+  height: auto;
+}
+
+.shop_page_brands .carousel.slide .carousel-inner {
+  overflow: unset;
+}
+
+.shop_page_brands .carousel.slide .carousel-inner .carousel-caption {
+  position: relative;
+  right: unset;
+  left: unset;
+}
+
+@media (max-width: 992px) {
+  .shop_page_banner {
+    background-attachment: scroll;
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
+
+  .shop_page_banner h1 {
+    font-size: 3rem;
+  }
+
+  .shop_page_app h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .shop_page_banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .shop_page_app h2 {
+    font-size: 2.5rem;
+  }
+
+  .shop_page_brands .brand_img {
+    width: 70px;
+  }
+}

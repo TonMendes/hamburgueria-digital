@@ -1,0 +1,142 @@
+.blog_page_banner {
+  background: url("../../assets/blog/reviews.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.blog_page_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.blog_page_banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.blog_page_banner h1 {
+  color: var(--white);
+  font-size: 4rem;
+}
+
+.blog_page_banner p {
+  color: var(--light-white);
+  font-size: 1.2rem;
+}
+
+.blog_page_posts {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.blog_page_posts h2 {
+  font-size: 3rem;
+  color: var(--light-red);
+}
+
+.blog_card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.blog_card_img img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.blog_card:hover .blog_card_img img {
+  transform: scale(1.05);
+}
+
+.blog_card_body {
+  padding: 25px;
+}
+
+.blog_date {
+  color: var(--light-red);
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog_card_body h4 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.blog_card_body p {
+  color: var(--grey);
+  font-size: 0.95rem;
+}
+
+.blog_page_reviews {
+  padding: 80px 0 50px;
+  background: url("../../assets/blog/reviews.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.blog_page_reviews .user_img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 25px;
+}
+
+.blog_page_reviews .carousel.slide .carousel-inner .carousel-caption p {
+  font-size: 1.7rem;
+  line-height: 1.45;
+  font-weight: 400;
+  padding: 0 12%;
+  margin-bottom: 25px;
+}
+
+.blog_page_reviews .carousel.slide .carousel-inner .carousel-caption .item_rating i {
+  color: var(--yellow);
+  margin-right: 5px;
+}
+
+.blog_page_reviews .carousel.slide .carousel-inner .carousel-caption h5 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+  .blog_page_banner {
+    background-attachment: scroll;
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
+
+  .blog_page_banner h1 {
+    font-size: 3rem;
+  }
+
+  .blog_page_reviews {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog_page_banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .blog_page_reviews .carousel.slide .carousel-inner .carousel-caption p {
+    font-size: 1rem;
+  }
+}

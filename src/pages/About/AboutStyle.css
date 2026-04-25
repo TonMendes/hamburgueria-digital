@@ -1,0 +1,95 @@
+.about_page_banner {
+  background: url("../../assets/about/about-1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.about_page_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.about_page_banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about_page_banner h1 {
+  color: var(--white);
+  font-size: 4rem;
+}
+
+.about_page_banner p {
+  color: var(--light-white);
+  font-size: 1.2rem;
+}
+
+.about_page_story {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about_page_story h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about_page_story p {
+  color: var(--grey);
+  margin-bottom: 15px;
+}
+
+.about_page_values {
+  background: var(--yellow);
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.about_page_values h2 {
+  font-size: 2.5rem;
+}
+
+.about_page_values .about_box .about_icon img {
+  max-width: 25%;
+}
+
+.about_page_values .about_box h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.about_page_values .about_box p {
+  padding: 0 15px;
+  color: var(--bg-coffee);
+}
+
+@media (max-width: 992px) {
+  .about_page_banner {
+    background-attachment: scroll;
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
+
+  .about_page_banner h1 {
+    font-size: 3rem;
+  }
+
+  .about_page_story h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_page_banner h1 {
+    font-size: 2.5rem;
+  }
+}
